@@ -763,7 +763,8 @@ figure {
     position: absolute;
     right:10%;
     top: 24px;
-    padding: 8px 8px;    
+    padding: 8px 8px;
+    cursor: pointer;    
 }
 
 .modal-close svg{
