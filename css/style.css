@@ -710,6 +710,66 @@ figure {
     margin-bottom: 32px;
 }
 
+.modal {    
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transition-property: visibilty, opacity;
+    transition-duration: 250ms;
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+.modal.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;    
+}
+
+.modal.is-hidden .modal-content {
+    transform: scale(0.5);
+}
+
+.modal-content {
+    position: relative;
+    width: 408px;
+    height: 584px;
+    border-radius: 4px;
+    background-color: var(--dairy);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    transform: none;
+    transition: transform 250ms;
+}
+
+.modal-close {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: var(--cornflower);
+    border: 0px;
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+    position: absolute;
+    right:10%;
+    top: 24px;
+    padding: 8px 8px;    
+}
+
+.modal-close svg{
+    fill: var(--navyblue);
+}
+
 
 
 
