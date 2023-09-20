@@ -485,7 +485,8 @@ figure {
     font-style: normal;
     line-height: 1.5em;
     color: var(--cloud);
-    letter-spacing: 0.32px;    
+    letter-spacing: 0.32px;
+    margin-top: 17.5px;
 }
 
 .footer {
@@ -496,9 +497,10 @@ figure {
 }
 
 .container-footer {
+    display: flex;
+    flex-direction: row; 
     width: 1158px;
     margin: 0 auto;
-    flex-shrink: 0;
     height: 112px;
     flex-shrink: 0;
 }
@@ -515,6 +517,11 @@ figure {
     flex-shrink: 0;
 }
 
+.logo-description {
+    display: flex;
+    flex-direction: column;
+}
+
 .social-media {
     color: var(--white);
     font-family: Roboto;
@@ -523,6 +530,7 @@ figure {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    margin-bottom: 16px;
 }
         
 .logo-container {
@@ -530,19 +538,17 @@ figure {
     flex-shrink: 0;
 }
 
-.icons-container {    
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-    justify-content: center;
-    align-items: flex-start;
+.icons-container {
+    display: inline;
+    width: 208px;
+    height: 80px;
     flex-shrink: 0;
-    margin-top: -105px;
-    margin-left: 540px;
+    margin-left: 120px;
 }
 
 .footer-icons {
-    display: flex;
+    display: inline-flex;
+    align-items: flex-start;
     gap: 16px;
 }
 
