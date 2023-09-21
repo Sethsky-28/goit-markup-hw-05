@@ -385,7 +385,7 @@ figure {
     height: 40px;
     background-color: var(--iris);
     border-radius: 20px;
-    transition: backgound-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-link:hover {
@@ -468,7 +468,8 @@ figure {
     border: 1px solid var(--lightslate);
     color: var(--lightslate);
     padding: 16px 32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link svg{
@@ -654,14 +655,15 @@ figure {
 .name-type {
     border: 1px solid var(--cornflower);
     background: var(--white);
-    padding: 0px 16px;
+    padding: 32px 16px;
     border-top: unset;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     align-self: stretch;
-    gap: 8px;    
+    gap: 8px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-item {
@@ -672,7 +674,6 @@ figure {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-item:hover figcaption {
@@ -721,7 +722,7 @@ figure {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
     0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .project-item-name {
@@ -730,7 +731,6 @@ figure {
     font-style: normal;
     line-height: 1.25em;
     letter-spacing: 0.4px;
-    margin-top: 32px;
 }
 
 .project-item-type {
@@ -739,7 +739,6 @@ figure {
     font-style: normal;
     line-height: 1em;
     letter-spacing: 0.32px;
-    margin-bottom: 32px;
 }
 
 .modal {
